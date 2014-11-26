@@ -28,20 +28,12 @@ void loop()
   PrintStringToLCD("Hello World", 0, 0);
   PrintIntToLCD(12345, 1, 0);
   
-  digitalWrite(HEALTH_LED, HIGH);
-  delay(1000);
-  digitalWrite(HEALTH_LED, LOW);
-  delay(1000);
-  digitalWrite(HEALTH_LED, HIGH);
-  delay(1000);
-  digitalWrite(HEALTH_LED, LOW);
-  delay(1000);
-  digitalWrite(HEALTH_LED, HIGH);
-  delay(1000);
-  digitalWrite(HEALTH_LED, LOW);
-  delay(1000);
-  digitalWrite(HEALTH_LED, HIGH);
-  delay(1000);
-  digitalWrite(HEALTH_LED, LOW);
-  delay(1000);
-}
+  int i = 0;
+  for(i = 0; i < 5; i++)
+  {
+   digitalWrite(HEALTH_LED, HIGH);
+   delay(1000);
+   digitalWrite(HEALTH_LED, LOW);
+   delay(1000);
+  }
+ }
